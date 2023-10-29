@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class SupportController extends Controller
 {
-    public function index(Support $supports){
+    public function index(Support $support){
 
-        $supports = $supports->all();
+        $supports = $support->all();
 
-        return view('admin/supports/index', compact($supports));
+        return view('admin/supports/index', compact('supports'));
     }
 }
