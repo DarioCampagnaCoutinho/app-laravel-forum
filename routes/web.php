@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/** 06/11/2023 */
+
 Route::get('/supports/create', [SupportController::class, 'create'])->name('supports.create');
 
 Route::get('/supports', [SupportController::class, 'index'])->name('supports.index');
@@ -23,4 +25,8 @@ Route::get('/contacts', [SiteController::class, 'action']);
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/', function () {
+    return view('Iniciando');
 });
