@@ -19,4 +19,8 @@ class SupportController extends Controller
 
         return view('admin/supports/create');
     }
+
+    public function store(){
+        
+    }
 }
